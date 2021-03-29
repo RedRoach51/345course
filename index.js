@@ -156,14 +156,14 @@ async function enableWikiSupport(owner,repo)
 	options.json = {
 		has_wiki: true
 	};
-	console.log(options)		
+	//console.log(options)		
 	// Send a http request to url and specify a callback that will be called upon its return.
 	return new Promise(function(resolve, reject)
 	{
 		request(options, function (error, response, body) {
 			//console.log(JSON.parse(body));
-			//console.log(response.statusCode);
-			resolve( JSON.parse(body) );
+			//console.log(response);
+			resolve( body );
 		});
 	});	
 }
