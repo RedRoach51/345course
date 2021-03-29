@@ -1,8 +1,8 @@
-# Homework 3
-Student submission of Erick Lim for HW3.
+# Homework 4
+Student submission of Erick Lim for HW4.
 
-Part 1 completion viewed as follows:
+Part 1-4 completion viewed with Index.js file.
 
-![img](https://github.com/RedRoach51/345course/blob/master/HW3_Git.png)
+https://github.com/RedRoach51/345course/blob/master/index.js
 
-Part 2 completion viewed here: https://github.com/RedRoach51/345course/issues/1
+Part 5 completion submitted via Canvas.
