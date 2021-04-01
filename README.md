@@ -5,4 +5,6 @@ Part 1-4 completion viewed with Index.js file.
 
 https://github.com/RedRoach51/345course/blob/master/index.js
 
-Part 5 completion submitted via Canvas.
+Part 5 completion submission:
+
+![img](https://github.com/RedRoach51/345course/blob/master/img/screenflow.png)
