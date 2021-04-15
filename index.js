@@ -68,7 +68,7 @@ async function getUser()
 function listAuthenicatedUserRepos()
 {
 	let options = getDefaultOptions("/user/repos?visibility=all", "GET");
-	//console.log(options)
+	
 	// Send a http request to url and specify a callback that will be called upon its return.
 	return new Promise(function(resolve, reject)
 	{
@@ -116,14 +116,14 @@ async function createRepo(owner,repo)
 {
 	let options = getDefaultOptions("/user/repos", "POST");
 	options.json = {name: repo};
-	//console.log(options)
+
 	// Send a http request to url and specify a callback that will be called upon its return.
 	return new Promise(function(resolve, reject)
 	{
 		request(options, function (error, response, body) {
 
 			resolve( response.statusCode );
-			//console.log(response.statusCode)
+
 		});
 	});
 
@@ -136,14 +136,14 @@ async function createIssue(owner,repo, issueName, issueBody)
 		title: issueName,
 		body: issueBody
 	}
-	//console.log(options)
+
 
 	// Send a http request to url and specify a callback that will be called upon its return.
 	return new Promise(function(resolve, reject)
 	{
 		request(options, function (error, response, body) {
 			resolve( response.statusCode );
-			//console.log(response.statusCode)
+
 
 		});
 	});
@@ -156,13 +156,12 @@ async function enableWikiSupport(owner,repo)
 	options.json = {
 		has_wiki: true
 	};
-	//console.log(options)		
+	
 	// Send a http request to url and specify a callback that will be called upon its return.
 	return new Promise(function(resolve, reject)
 	{
 		request(options, function (error, response, body) {
-			//console.log(JSON.parse(body));
-			//console.log(response);
+
 			resolve( body );
 		});
 	});	
